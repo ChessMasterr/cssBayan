@@ -1,3 +1,112 @@
+/* body {
+  background-color: rgb(237, 248, 242);
+}
+
 .wrapper {
-    width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: static;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row:hover {
+  color: blue;
+}
+
+.img__mem {
+  height: 15vw;
+  width: 15vw;
+  position: fixed;
+  padding: 0 10% 0 10%;
+}
+
+.accordion {
+  width: 50vw;
+}
+
+summary {
+  list-style: none;
+}
+
+.accordion_arrow {
+  display: none;
+}
+
+.accordion__item {
+  display: inline-flex;
+}
+
+.accordion__item:hover .accordion_arrow {
+  display: block;
+}
+
+.accordion__item[open] .accordion_arrow {
+  display: block;
+  transform: rotate(180deg);
+  color: black;
+} */
+
+.wrapper {
+  width: 50vw;
+  margin: auto;
+}
+
+.accordion__item {
+  border: 1px solid black;
+  border-width: 1px 0 0;
+  margin: 15px 0 15px;
+}
+
+.img_acc {
+  width: 100%;
+  max-width: 15vw;
+  height: 15vw;
+  display: block;
+  margin: auto;
+}
+
+.accordion__item__triger {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__item__input {
+  opacity: 0;
+}
+
+.accordion__item__content {
+  display: none;
+}
+
+.accordion__item__input:checked ~ .accordion__item__content {
+  display: block;
+}
+
+.accordion {
+  color: blue;
+}
+
+.accordion:hover {
+  color: black;
+}
+
+
+.cross {
+  visibility: hidden;
+}
+
+.accordion__item:hover .cross {
+  transform: rotate(45deg);
+}
+
+.accordion:hover .cross {
+  visibility: visible;
+  transition: linear 0.35s;
 }

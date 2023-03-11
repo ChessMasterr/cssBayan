@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS BAYAN</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/normolize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>CSS BAYAN</h1>
+    </div>
+
+    <div class="wrapper">
+      <div class="accordion">
+        <div class="accordion__item">
+          <input
+            type="radio"
+            id="accordion_1"
+            class="accordion__item__input"
+            name="accordion"
+          />
+          <label class="accordion__item__triger" for="accordion_1">
+            Bayan 1
+            <span class="cross">&#10010</span>
+          </label>
+          <div class="accordion__item__content">
+            <img src="./img/cat.jpg" alt="cat" class="img_acc" />
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <input
+            type="radio"
+            id="accordion_2"
+            class="accordion__item__input"
+            name="accordion"
+          />
+          <label class="accordion__item__triger" for="accordion_2">
+            Bayan 2
+            <span class="cross">&#10010</span>
+          </label>
+          <div class="accordion__item__content">
+            <img src="./img/cup.png" alt="cup" class="img_acc" />
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <input
+            type="radio"
+            id="accordion_3"
+            class="accordion__item__input"
+            name="accordion"
+          />
+          <label class="accordion__item__triger" for="accordion_3">
+            Bayan 3
+            <span class="cross">&#10010</span>
+          </label>
+          <div class="accordion__item__content">
+            <img src="./img/eating.png" alt="eat" class="img_acc" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
+<!-- <div class="row"> </div>
+  <details class="accordion__item">
+            <summary class="accordion__title">
+              bayan number 1
+              <div class="accordion__closed">
+                <img
+                  src="./img/accordion_closed.svg"
+                  alt="arrow"
+                  class="accordion_arrow"
+                />
+              </div>
+            </summary>
+
+            <img src="./img/cat.jpg" alt="cat" class="img__mem" />
+          </details> -->
