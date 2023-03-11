@@ -89,14 +89,23 @@ summary {
   display: block;
 }
 
+.accordion__item__input:hover ~ .accordion__item__content {
+  display: block;
+}
+
+.accordion__item__input:checked ~ .cross {
+  visibility: visible;
+  transition: linear 0.35s;
+}
+
 .accordion {
   color: blue;
 }
 
 .accordion:hover {
   color: black;
+  cursor: pointer;
 }
-
 
 .cross {
   visibility: hidden;
