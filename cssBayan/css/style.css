@@ -84,6 +84,13 @@ input:active ~ .accordion__item__triger {
   color: blue;
 }
 
+.accordion__item:active .accordion__item__triger,
+.accordion__item:active .accordion__item__triger {
+  opacity: .5;
+}
+
+
+
 @media (hover: hover) {
   .accordion:hover .cross {
     /* visibility: visible; */
@@ -117,6 +124,7 @@ input:active ~ .accordion__item__triger {
 
 body {
   background-color: #f8f8d9;
+  height: 101vh;
 }
 
 @media screen and (max-width: 321px) {
