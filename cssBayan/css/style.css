@@ -55,7 +55,6 @@
 }
 
 .cross {
-  /* visibility: hidden; */
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -93,9 +92,8 @@ input:active ~ .accordion__item__triger {
 
 @media (hover: hover) {
   .accordion:hover .cross {
-    /* visibility: visible; */
     opacity: 10;
-    transition-duration: 0.35s;
+    transition: 0.5s;
   }
   .accordion__item__input:hover ~ .accordion__item__content {
     height: 20rem;
@@ -169,7 +167,7 @@ body {
 
   .cross {
     opacity: 1;
-    transition-duration: 0.35s;
+    transition: 0.5s;
   }
 
   .title_item {
