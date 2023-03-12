@@ -29,6 +29,7 @@
 .title_item {
   font-size: 2rem;
   font-weight: bold;
+  transition: color .5s ease-in-out;
 }
 
 .accordion__item__input {
@@ -54,7 +55,9 @@
 }
 
 .cross {
-  visibility: hidden;
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 h1 {
@@ -83,8 +86,8 @@ input:active ~ .accordion__item__triger {
 
 @media (hover: hover) {
   .accordion:hover .cross {
-    visibility: visible;
-
+    /* visibility: visible; */
+    opacity: 10;
     transition-duration: 0.35s;
   }
   .accordion__item__input:hover ~ .accordion__item__content {
@@ -157,7 +160,7 @@ body {
   }
 
   .cross {
-    visibility: visible;
+    opacity: 1;
     transition-duration: 0.35s;
   }
 
