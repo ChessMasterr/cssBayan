@@ -123,6 +123,12 @@ body {
   .wrapper {
     width: 90vw;
   }
+  .title_item {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 821px) {
@@ -132,6 +138,12 @@ body {
   .wrapper {
     width: 90vw;
     transition: linear 0.35s;
+  }
+  .title_item {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2.3rem;
   }
 }
 
@@ -147,5 +159,12 @@ body {
   .cross {
     visibility: visible;
     transition-duration: 0.35s;
+  }
+
+  .title_item {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 2.4rem;
   }
 }
