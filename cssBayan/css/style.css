@@ -1,0 +1,179 @@
+:root {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.wrapper {
+  width: 50vw;
+  margin: auto;
+}
+
+.accordion__item {
+  border: .063em solid black;
+  border-width: .063em 0 0;
+  margin: 1.25em 0 1.25em;
+}
+
+.img_acc {
+  width: 100%;
+
+  height: 20em;
+
+  object-fit: contain;
+}
+
+.accordion__item__triger {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_item {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color .5s ease-in-out;
+}
+
+.accordion__item__input {
+  opacity: 0;
+}
+
+.accordion__item__content {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+
+.accordion__item__input:checked ~ .accordion__item__content {
+  height: 20rem;
+}
+
+.accordion__item__input:checked ~ .cross {
+  visibility: visible;
+}
+
+.accordion {
+  color: blue;
+}
+
+.cross {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.accordion__item__input:active {
+  color: blue;
+}
+
+.accordion__item__content:checked {
+  height: 20em;
+}
+
+input:checked ~ .accordion__item__triger .cross {
+  transform: rotate(45deg);
+}
+
+input:checked ~ .accordion__item__triger {
+  color: black;
+}
+
+input:active ~ .accordion__item__triger {
+  color: blue;
+}
+
+.accordion__item:active .accordion__item__triger,
+.accordion__item:active .accordion__item__triger {
+  opacity: .5;
+}
+
+
+
+@media (hover: hover) {
+  .accordion:hover .cross {
+    opacity: 10;
+    transition: 0.5s;
+  }
+  .accordion__item__input:hover ~ .accordion__item__content {
+    height: 20rem;
+  }
+
+  .accordion:hover {
+    color: black;
+    cursor: pointer;
+  }
+  .accordion__item__triger:hover {
+    cursor: pointer;
+  }
+
+  .accordion__item:hover {
+    cursor: pointer;
+  }
+
+  .accordion__item:hover .cross {
+    transform: rotate(45deg);
+  }
+
+  .accordion__item__content:hover {
+    height: 20rem;
+  }
+}
+
+body {
+  background-color: #f8f8d9;
+  height: 101vh;
+}
+
+@media screen and (max-width: 1220px) {
+  :root {
+    font-size: 0.9rem;
+  }
+  .wrapper {
+    width: 85vw;
+    transition: linear 0.35s;
+  }
+
+  .cross {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .title_item {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  :root {
+    font-size: 0.7rem;
+  }
+  .wrapper {
+    width: 90vw;
+    transition: linear 0.35s;
+  }
+  .title_item {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  :root {
+    font-size: 0.6rem;
+  }
+  .wrapper {
+    width: 90vw;
+  }
+  .title_item {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
