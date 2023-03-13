@@ -8,9 +8,9 @@
 }
 
 .accordion__item {
-  border: 1px solid black;
-  border-width: 1px 0 0;
-  margin: 15px 0 15px;
+  border: .063em solid black;
+  border-width: .063em 0 0;
+  margin: 1.25em 0 1.25em;
 }
 
 .img_acc {
