@@ -125,37 +125,6 @@ body {
   height: 101vh;
 }
 
-@media screen and (max-width: 321px) {
-  :root {
-    font-size: 0.6rem;
-  }
-  .wrapper {
-    width: 90vw;
-  }
-  .title_item {
-    font-size: 1.5rem;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 821px) {
-  :root {
-    font-size: 0.7rem;
-  }
-  .wrapper {
-    width: 90vw;
-    transition: linear 0.35s;
-  }
-  .title_item {
-    font-size: 1.6rem;
-  }
-  h1 {
-    font-size: 2.3rem;
-  }
-}
-
 @media screen and (max-width: 1220px) {
   :root {
     font-size: 0.9rem;
@@ -175,5 +144,36 @@ body {
   }
   h1 {
     font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  :root {
+    font-size: 0.7rem;
+  }
+  .wrapper {
+    width: 90vw;
+    transition: linear 0.35s;
+  }
+  .title_item {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  :root {
+    font-size: 0.6rem;
+  }
+  .wrapper {
+    width: 90vw;
+  }
+  .title_item {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
   }
 }
